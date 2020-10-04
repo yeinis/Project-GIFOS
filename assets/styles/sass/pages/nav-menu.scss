@@ -1,0 +1,116 @@
+@import '../utils/variables';
+
+.menu {
+  height: 95px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+
+  .logo {
+    padding: 0 80px;
+    padding-top: 117px;
+    padding-left: 25px;
+  }
+
+  .menu_items {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+
+    position: fixed;
+    width: 100vw;
+    height: calc(100% - 65px);
+    top: -100vh;
+    text-align: center;
+    transition: all 0.4s;
+    flex-direction: column;
+    background: rgba(87, 46, 229, 0.9);
+    padding-left: 0px;
+
+    li {
+      border-radius: 3px;
+      // margin: 0 5px;
+      margin-left: -38px;
+      margin: 14px 0 0 0;
+      line-height: 30px;
+      :hover {
+        background: none;
+      }
+
+      a {
+        padding: 0px 13px;
+        text-decoration: none;
+        font-family: 'Montserrat-Bold';
+        display: block;
+        font-size: 15px;
+        color: #ffffff;
+        text-align: center;
+        line-height: 60px;
+      }
+      :hover,
+      .active {
+        background-color: rgba(0, 0, 0, 0.3);
+        transition: 0.4s;
+      }
+    }
+  }
+
+  .btn_menu {
+    padding-right: 26px;
+    padding-top: 26px;
+  }
+
+  .btn-menu {
+    margin-right: 30px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    display: inline-flex;
+  }
+
+  ul.show {
+    top: 77px;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    align-items: unset;
+    border-bottom: unset;
+
+    .logo {
+      padding-top: 23px;
+      padding-left: 156px;
+    }
+
+    .menu_items {
+      flex-direction: row;
+      top: 0px;
+      background: unset;
+      height: unset;
+      position: unset;
+      padding-inline-start: initial;
+      margin: 0;
+      width: unset;
+
+      li {
+        margin: unset;
+        display: flex;
+        align-items: center;
+         margin: 30px 0 0 0;
+        a {
+          color: $color-menu-purple;
+          font-size: 20px;
+          font-weight: bold;
+          padding: 7px 13px;
+        }
+      }
+    }
+  }
+
+  .btn_menu {
+    display: none;
+  }
+}

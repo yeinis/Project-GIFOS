@@ -1,0 +1,42 @@
+@import '../utils/variables';
+
+.section-trending-gifos {
+  // .text-tittle-gifos {
+  //   color: $color-menu-purple;
+  //   font-size: 20px;
+  //   font-weight: bold;
+  // }
+
+  .img-gifos {
+    .gif {
+      width: 243px;
+      height: 187px;
+      overflow-x: auto;
+    }
+  }
+
+  .button-more {
+    border: 1px solid $color-purple;
+    border-radius: 25px;
+    width: 127px;
+    height: 50px;
+    color: $color-purple;
+    outline-offset: unset;
+    outline: unset;
+  }
+
+  .paginacion {
+    width: 243px;
+    overflow-x: auto;
+    justify-content: end;
+
+    .button-paginacion {
+      background: #572ee5;
+      border: 1px solid #572ee5;
+      color: white;
+      border-radius: 20px;
+      width: 32px;
+      height: 32px;
+    }
+  }
+}

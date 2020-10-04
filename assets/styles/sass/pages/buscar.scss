@@ -1,0 +1,92 @@
+@import '../utils/variables';
+
+.buscar-container {
+  .titulo-container {
+    width: 286px;
+  }
+
+  .img-main {
+    width: 273px;
+    height: 130px;
+  }
+
+  .section-search {
+    position: relative;
+
+    .input-buscar {
+      background: #ffffff;
+      border: 1px solid #572ee5;
+      border-radius: 27px;
+      width: 334px;
+      height: 50px;
+      margin-bottom: 15px;
+      outline-offset: unset;
+      outline: unset;
+    }
+
+    .input-buscando {
+      background: #ffffff;
+      width: 291px;
+      height: 38px;
+      border: 1px solid #9cafc3;
+      border-radius: unset;
+      border-top: unset;
+      border-left: unset;
+      border-right: unset;
+      padding-bottom: 0px;
+      padding-left: 3px;
+      margin-top: 9px;
+      margin-left: 12px;
+    }
+
+    .color-icon-search {
+      color: $color-menu-purple;
+      position: absolute;
+      margin-top: 23px;
+      margin-left: -31px;
+    }
+  }
+
+  .text-subtitulo {
+    font-size: 16px;
+    color: $color-menu-purple;
+    font-family: 'Montserrat-Bold';
+    font-weight: bold;
+  }
+
+  .text-action {
+    // padding-right: 75px;
+    padding-left: 3px;
+    .trending-container {
+      .text {
+        color: $color-menu-purple;
+        font-family: 'Montserrat-Medium';
+        font-size: 14px;
+      }
+    }
+  }
+
+  .border-section-search {
+    border: 1px solid $color-purple;
+    width: 334px;
+    border-radius: 24px;
+
+    .list-sugerencias {
+      padding-left: 14px;
+
+      .item {
+        margin-top: -19px;
+      }
+    }
+  }
+
+  .buscados-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+  }
+
+  .trending-container {
+  }
+}

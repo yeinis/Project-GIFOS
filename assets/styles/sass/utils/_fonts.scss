@@ -1,0 +1,30 @@
+// @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+// @import '../../../fonts/Monserrat/Montserrat-Medium.ttf';
+// @font-face {
+//     font-family: "Montserrat-Medium";
+//     src: url("../../../fonts/Monserrat/Montserrat-Medium.ttf");
+// }
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-display: block;
+  src: url("../../fonts/Monserrat/Montserrat-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("../../fonts/Monserrat/Montserrat-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  font-style: normal;
+  font-weight: 500;
+  font-display: block;
+  src: url("../../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
