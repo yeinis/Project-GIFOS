@@ -1,2 +1,2 @@
 # Project-GIFOS
-proyecto para crear y compartir Gifos, realizados en JavaScript 
+Proyecto para crear y compartir Gifos, realizados en JavaScript 
