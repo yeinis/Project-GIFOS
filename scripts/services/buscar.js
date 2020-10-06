@@ -28,14 +28,13 @@ class Buscar {
     } else {
       alert( 'Error, Debe ingresar un valor para filtrar' );
     }
-
   }
 
   /*=========================================
   =      Get and paint Trending Labels      =
   ==========================================*/
   async getCardTrending() {
-    const result = await giphyService.getTrending();
+    const result = await giphyService.getTrendingLabels();
     if ( result.data.length === 0 ) { return; }
 
     const selector = this.$( '.trending-container' );
@@ -80,15 +79,34 @@ class Buscar {
     this.onSearchByItem();
   }
 
+
+  async getTrending() {
+    const trendingSelector = this.$( '.gif' );
+    let imgTrending = '';
+
+    const result = await giphyService.getTrending();
+    console.log( 'result trending .,.,.,.,.,.', result );
+
+    result.data.forEach( element => {
+      imgTrending = imgTrending + `
+           <img src=${ element.images.downsized.url } class="gif-img" alt="${ element.title }">`;
+    } );
+
+    trendingSelector.innerHTML = imgTrending;
+
+  }
+
   /*=====================================
    =      search by suggested trends     =
    =====================================*/
   onSearchByItem() {
+    const buscarSelector = this.$( '#text-buscar' );
     const itemSelector = document.querySelectorAll( '.list-sugerencias > div > p.item-text' );
 
     itemSelector.forEach( element => {
       element.addEventListener( 'click', async ( event ) => {
         var item = event.target;
+        buscarSelector.value = item.innerText;
         buscar.getTrendingByText( item.innerText );
       } );
     } );

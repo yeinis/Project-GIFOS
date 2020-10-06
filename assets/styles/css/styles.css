@@ -49,6 +49,8 @@ body {
     padding-left: 1px; }
   body .pl-2 {
     padding-left: 2px; }
+  body .pl-3 {
+    padding-left: 3px; }
   body .pr-0 {
     padding-right: 0px; }
   body .pr-1 {
@@ -147,7 +149,8 @@ body {
   font-family: 'Montserrat-Bold';
   font-weight: bold; }
 .buscar-container .text-action {
-  padding-left: 3px; }
+  padding-right: 75px;
+  padding-left: 75px; }
   .buscar-container .text-action .trending-container .text {
     color: #572EE5;
     font-family: 'Montserrat-Medium';
@@ -166,18 +169,18 @@ body {
   flex-wrap: wrap;
   width: 300px; }
 
-.menu {
+.menu-container .menu {
   height: 95px;
   width: 100vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #fff; }
-  .menu .logo {
+  .menu-container .menu .logo {
     padding: 0 80px;
     padding-top: 117px;
     padding-left: 25px; }
-  .menu .menu_items {
+  .menu-container .menu .menu_items {
     display: flex;
     list-style: none;
     margin-right: 30px;
@@ -190,14 +193,14 @@ body {
     flex-direction: column;
     background: rgba(87, 46, 229, 0.9);
     padding-left: 0px; }
-    .menu .menu_items li {
+    .menu-container .menu .menu_items li {
       border-radius: 3px;
       margin-left: -38px;
       margin: 14px 0 0 0;
       line-height: 30px; }
-      .menu .menu_items li :hover {
+      .menu-container .menu .menu_items li :hover {
         background: none; }
-      .menu .menu_items li a {
+      .menu-container .menu .menu_items li a {
         padding: 0px 13px;
         text-decoration: none;
         font-family: 'Montserrat-Bold';
@@ -206,55 +209,52 @@ body {
         color: #ffffff;
         text-align: center;
         line-height: 60px; }
-      .menu .menu_items li :hover,
-      .menu .menu_items li .active {
-        background-color: rgba(0, 0, 0, 0.3);
-        transition: 0.4s; }
-  .menu .btn_menu {
+  .menu-container .menu .btn_menu {
     padding-right: 26px;
     padding-top: 26px; }
-  .menu .btn-menu {
-    margin-right: 30px;
-    font-size: 25px;
-    cursor: pointer;
-    display: none;
-    display: inline-flex; }
-  .menu ul.show {
+  .menu-container .menu ul.show {
     top: 77px; }
 
 @media (min-width: 768px) {
-  .menu {
-    align-items: unset;
-    border-bottom: unset; }
-    .menu .logo {
-      padding-top: 23px;
-      padding-left: 156px; }
-    .menu .menu_items {
-      flex-direction: row;
-      top: 0px;
-      background: unset;
-      height: unset;
-      position: unset;
-      padding-inline-start: initial;
-      margin: 0;
-      width: unset; }
-      .menu .menu_items li {
-        margin: unset;
-        display: flex;
-        align-items: center;
-        margin: 30px 0 0 0; }
-        .menu .menu_items li a {
-          color: #572EE5;
-          font-size: 20px;
-          font-weight: bold;
-          padding: 7px 13px; }
-
-  .btn_menu {
-    display: none; } }
+  .menu-container {
+    padding-left: 156px; }
+    .menu-container .menu {
+      align-items: unset;
+      border-bottom: unset; }
+      .menu-container .menu .logo {
+        padding-top: 23px; }
+      .menu-container .menu .menu_items {
+        flex-direction: row;
+        top: 0px;
+        background: unset;
+        height: unset;
+        position: unset;
+        padding-inline-start: initial;
+        margin: 0;
+        width: unset;
+        padding-right: 156px; }
+        .menu-container .menu .menu_items li {
+          margin: unset;
+          display: flex;
+          align-items: center;
+          margin: 30px 0 0 0; }
+          .menu-container .menu .menu_items li a {
+            color: #572EE5;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 7px 13px; }
+            .menu-container .menu .menu_items li a .crear-gifo {
+              padding-top: 112px; }
+              .menu-container .menu .menu_items li a .crear-gifo :hover {
+                background-color: unset; }
+      .menu-container .menu .btn_menu {
+        display: none; } }
 .section-trending-gifos .img-gifos .gif {
-  width: 243px;
-  height: 187px;
   overflow-x: auto; }
+  .section-trending-gifos .img-gifos .gif .gif-img {
+    width: 187px;
+    height: 243px;
+    padding-left: 22px; }
 .section-trending-gifos .button-more {
   border: 1px solid #562fde;
   border-radius: 25px;

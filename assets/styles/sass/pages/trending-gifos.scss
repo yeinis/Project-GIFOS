@@ -9,9 +9,16 @@
 
   .img-gifos {
     .gif {
-      width: 243px;
-      height: 187px;
+      // width: 250px;
+      // height: 200px;
       overflow-x: auto;
+
+      .gif-img {
+        width: 187px;
+        height: 243px;
+        padding-left: 22px;
+      }
+
     }
   }
 

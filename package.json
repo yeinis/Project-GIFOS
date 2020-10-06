@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "browser-sync start --server --files='./*.html,./styles/*.css' --port 8080 --open",
     "clean": "rimraf dist",
     "sass:watch": "sass assets/styles/sass/main.scss assets/styles/css/styles.css --watch",
     "build:sass": "sass src/styles/styles.scss dist/assets/css/styles.css -s compressed --no-source-map",
@@ -14,8 +15,7 @@
     "build": "npm run clean && npm run build:html && npm run build:sass &&  npm run build:assets",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:dev": "webpack",
-    "build:prod": "webpack --config webpack.prod.js",
-    "start": "webpack-dev-server --host=10.42.0.61"
+    "build:prod": "webpack --config webpack.prod.js"
   },
   "author": "Danilo Orozco Gil",
   "license": "ISC",

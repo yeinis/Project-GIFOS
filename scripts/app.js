@@ -2,12 +2,12 @@
 import { buscar } from './services/buscar.js';
 import { trendingEvent } from './events/trendingEvent.js';
 
-setTimeout(() => {
-buscar.getCardTrending();
-// buscar.searchByTags();
+setTimeout( () => {
+  buscar.getCardTrending();
+  buscar.getTrending();
 
-// Event trending
-  trendingEvent.onShowMore();  
+  // Event trending
+  trendingEvent.onShowMore();
   trendingEvent.onSearchButton();
   trendingEvent.onSearchByTags();
-}, 1000);
+}, 1000 );

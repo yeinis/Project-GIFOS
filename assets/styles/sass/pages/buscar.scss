@@ -55,13 +55,15 @@
   }
 
   .text-action {
-    // padding-right: 75px;
-    padding-left: 3px;
+    padding-right: 75px;
+    padding-left: 75px;
+
     .trending-container {
       .text {
         color: $color-menu-purple;
         font-family: 'Montserrat-Medium';
         font-size: 14px;
+        // width: auto;
       }
     }
   }
