@@ -1,6 +1,7 @@
 @import '../utils/variables';
 
 .buscar-container {
+  // padding: 0 60px;
   .titulo-container {
     width: 286px;
   }
@@ -59,6 +60,10 @@
     padding-left: 75px;
 
     .trending-container {
+      a {
+        display: inline-block;
+      }
+
       .text {
         color: $color-menu-purple;
         font-family: 'Montserrat-Medium';
@@ -92,3 +97,5 @@
   .trending-container {
   }
 }
+
+

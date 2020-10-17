@@ -1,27 +1,73 @@
 <section class="section-trending-gifos">
 
-  <div class="text-align-center pt-5">
+  <!-- =======================
+  = Boton ver mas paginador  =
+  =========================-->
+  <div class="text-align-center pt-5 setion-pagination">
     <button class="button-more">VER MÁS</button>
   </div>
 
-  <p class="text-color-purple text-align-center titulos">Trending GIFOS</p>
+  <!-- =======================
+  =    todo los trending     =
+  =========================-->
+  <div class="trending">
+    <p class="text-color-purple text-align-center titulos">Trending GIFOS</p>
 
-  <div class="text-align-center">
-    <p class="mb-0 pb-4">Mira los últimos</p>
-    <p class="mt-0">GIFOS de nuestra comunidad</p>
-  </div>
+    <!--==========
+    =   Titulo   =
+    ===========-->
+    <div class="text-align-center">
+      <p class="mb-0 pb-4">Mira los últimos</p>
+      <p class="mt-0">GIFOS de nuestra comunidad</p>
+    </div>
 
-  <div class="img-gifos">
-    <div class="gif d-flex">
+    <div class="gifos-container">
 
-    </div>    
+      <!--===== botones sobre la imagen ======-->
+      <!-- <div class="option-trending-img">
+        <button class="button-img-over">
+          <i class="fa fa-heart-o"
+             aria-hidden="true"></i>
+        </button>
+
+        <button class="button-img-over">
+          <i class="fa fa-download"
+             aria-hidden="true"></i>
+        </button>
+
+        <button class="button-img-over">
+          <i class="fa fa-expand"
+             aria-hidden="true"></i>
+        </button>
+      </div> -->
+
+      <!--=========================== 
+      = Contenerdor de las imagenes =
+      =============================-->
+      <div class="img-gifos d-flex">
+
+        <!-- Boton antes -->
+        <button class="before button-next-before">
+          <i class="fa fa-chevron-left"
+             aria-hidden="true"></i>
+        </button>
+
+        <!-- donde se pintan las imagenes -->
+        <div class="gif d-flex moved">
+        </div>
+
+        <!-- boton despues -->
+        <button class="next button-next-before">
+          <i class="fa fa-chevron-right"
+             aria-hidden="true"></i>
+        </button>
+      </div>
+    </div>
   </div>
 
   <!-- <div class="paginacion d-flex">
     <button class="button-paginacion">10</button>
 
   </div> -->
-  
 
-  
 </section>

@@ -1,0 +1,74 @@
+@import '../utils/variables';
+
+.new-gifos-container {
+  padding-left: 25px;
+  margin-left: 156px;
+
+  .record-container {
+    .img-record {
+      margin-top: 140px;
+      position: relative;
+      margin-right: 118px;
+
+      .img-luz-camara {
+        margin-top: 20px;
+        position: absolute;
+      }
+    }
+
+    .marco-record {
+      border: 1px solid $color-menu-purple;
+      width: 688px;
+      height: 390px;
+      margin-top: 34px;
+      padding: 25px;
+
+      .marcon-interior {
+        width: 668px;
+        height: 370px;
+        background: white;
+        margin: 2em auto;
+        top: -21px;
+        position: relative;
+
+        .titulo-container {
+          top: 92px;
+          left: 70px;
+          width: 550px;
+          position: absolute;
+        }
+
+        &:after {
+          content: '';
+          width: 678px;
+          height: 380px;
+          position: absolute;
+          // background: $color-blue;
+          z-index: -1;
+          top: -5px;
+          left: -5px;
+          background-image: linear-gradient(to left, transparent 30px, white 30px, white 648px, transparent 648px),
+            linear-gradient($color-blue 30px, transparent 30px, transparent 350px, $color-blue 350px);
+        }
+      }
+    }
+    .pelicula-img {
+      margin-top: 454px;
+      margin-left: 67px;
+    }
+  }
+  .pasos-container {
+    padding-left: 25px;
+    margin-left: 156px;
+
+    .button-pasos {
+      // background: #572ee5;
+      border: 1px solid $color-purple;
+      color: $color-purple;
+      border-radius: 20px;
+      width: 32px;
+      height: 32px;
+      margin-right: 37px;
+    }
+  }
+}

@@ -1,8 +1,8 @@
 @import '../utils/variables';
+
 .menu-container {
   .menu {
     height: 95px;
-    width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -78,14 +78,19 @@
 
 @media (min-width: 768px) {
   .menu-container {
-    padding-left: 156px;
+    // padding-left: 156px;
+    // margin-left: 156px;
 
     .menu {
       align-items: unset;
       border-bottom: unset;
+      width: 100vw;
 
       .logo {
         padding-top: 23px;
+        margin-left: 156px;
+        padding-right: 0px;
+        cursor: pointer;
         // padding-left: 156px;
       }
 
@@ -98,7 +103,7 @@
         padding-inline-start: initial;
         margin: 0;
         width: unset;
-        padding-right: 156px;
+        padding-right: 0px;
 
         li {
           margin: unset;
@@ -124,7 +129,7 @@
           }
         }
       }
-      
+
       .btn_menu {
         display: none;
       }

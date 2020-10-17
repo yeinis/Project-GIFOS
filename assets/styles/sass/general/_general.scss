@@ -9,7 +9,6 @@ body {
   }
 
   .subtitulo {
-
   }
 
   .text-color-blue {
@@ -52,7 +51,10 @@ body {
     margin-left: 1px;
   }
   .ml-2 {
-    margin-left: 1px;
+    margin-left: 2px;
+  }
+  .ml-3 {
+    margin-left: 3px;
   }
   .mr-0 {
     margin-right: 0px;
@@ -156,5 +158,14 @@ body {
     font-family: 'Roboto-Regular';
     font-size: 16px;
     color: $color-list;
+  }
+
+  .new-gifos-section {
+    display: none;
+  }
+
+  .text-regular {
+    font-family: 'Roboto-Regular';
+    font-size: 16px;
   }
 }

@@ -85,11 +85,29 @@ class Buscar {
     let imgTrending = '';
 
     const result = await giphyService.getTrending();
-    console.log( 'result trending .,.,.,.,.,.', result );
 
     result.data.forEach( element => {
       imgTrending = imgTrending + `
-           <img src=${ element.images.downsized.url } class="gif-img" alt="${ element.title }">`;
+      <div class="option-trending-img">
+        <button class="button-img-over">
+          <i class="fa fa-heart-o"
+             aria-hidden="true"></i>
+        </button>
+
+        <button class="button-img-over">
+          <i class="fa fa-download"
+             aria-hidden="true"></i>
+        </button>
+
+        <button class="button-img-over">
+          <i class="fa fa-expand"
+             aria-hidden="true"></i>
+        </button>
+      </div>
+
+      <div class="trending-traslate">
+           <img src=${ element.images.downsized.url } class="gif-img" alt="${ element.title }">
+      </div>`;
     } );
 
     trendingSelector.innerHTML = imgTrending;
@@ -105,6 +123,7 @@ class Buscar {
 
     itemSelector.forEach( element => {
       element.addEventListener( 'click', async ( event ) => {
+
         var item = event.target;
         buscarSelector.value = item.innerText;
         buscar.getTrendingByText( item.innerText );

@@ -13,11 +13,33 @@
   <script src="./scripts/main.js"></script>
 
 <body>
-  
+  <!--==============
+  =  Nav section   =
+  ===============-->
   <section w3-include-html="./pages/nav-menu.html"></section>
-  <section w3-include-html="./pages/buscar.html"></section>
-  <section w3-include-html="./pages/trending-gifos.html"></section>
+
+  <!--==============
+  =  Home section  =
+  ===============-->
+  <div class="home-section">
+    <section w3-include-html="./pages/buscar.html"></section>
+    <section w3-include-html="./pages/trending-gifos.html"></section>
+  </div>
+  
+  <!--====================
+  =  Create gifo section =
+  =====================-->
+  <div class="new-gifos-section">
+    <section w3-include-html="./pages/new-gifo/new-gifo.html"></section>
+
+  </div>
+
+  
+  <!--=================
+  =  Footer section   =
+  ==================-->
   <section w3-include-html="./pages/footer.html"></section>
+
   
   <script> includeHTML(); </script>
   <!-- <script src="./assets/scripts/services/buscar.js" type="module"></script>   -->

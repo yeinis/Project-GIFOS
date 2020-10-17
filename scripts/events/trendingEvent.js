@@ -2,6 +2,7 @@ import { giphyService } from '../services/gifos.service.js';
 import { buscar } from '../services/buscar.js';
 
 class TrendingEvent {
+  positionSliderTrending = 0;
 
   /*===================================
   =       Event button show more      =
@@ -57,6 +58,52 @@ class TrendingEvent {
     } );
   }
 
+  /*===================================
+  =      Event Buttong next image     =
+  ====================================*/
+  onNextTrending() {
+    const buttonNextSelector = this.$( '.next' );
+    const buttonBeforeSelector = this.$( '.before' );
+    
+    buttonNextSelector.addEventListener( 'click', async () => {
+      this.positionSliderTrending = this.positionSliderTrending - 250;
+      console.log( 'netx ----', this.positionSliderTrending );
+      if ( this.positionSliderTrending != 0 ) {
+        buttonBeforeSelector.disabled =  false;
+      }
+
+      const imgTrendingSelector = this.$All( '.trending-traslate' );
+      imgTrendingSelector.forEach( element => {
+        element.style.cssText = `transform: translate( ${ this.positionSliderTrending }px );`;
+      } );
+    } );
+  }
+
+
+  /*===================================
+  =      Event Buttong before image     =
+  ====================================*/
+  onBeforeTrending() {
+    const buttonBeforeSelector = this.$( '.before' );
+
+    if ( this.positionSliderTrending === 0 ) {
+      buttonBeforeSelector.disabled = true;
+    }
+    
+    buttonBeforeSelector.addEventListener( 'click', async () => {
+      this.positionSliderTrending = this.positionSliderTrending + 250;
+      console.log( 'before ----', this.positionSliderTrending );
+      if ( this.positionSliderTrending === 0 ) {
+        buttonBeforeSelector.disabled = true;
+      }
+
+      const imgTrendingSelector = this.$All( '.trending-traslate' );
+      imgTrendingSelector.forEach( element => {
+        element.style.cssText = `transform: translate( ${ this.positionSliderTrending }px );`;
+      } );
+    } );
+  }
+
   /*======================================
   =    method search trending by text    =
   =======================================*/
@@ -73,10 +120,14 @@ class TrendingEvent {
   $( selector ) {
     return document.querySelector( selector );
   }
+  
+  $All( selector ) {
+    return document.querySelectorAll( selector );
+  }
 }
 
 const trendingEvent = new TrendingEvent();
-Object.freeze( trendingEvent );
+// Object.freeze( trendingEvent );
 
 export {
   trendingEvent

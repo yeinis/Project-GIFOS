@@ -1,49 +1,181 @@
 @import '../utils/variables';
 
 .section-trending-gifos {
-  // .text-tittle-gifos {
-  //   color: $color-menu-purple;
-  //   font-size: 20px;
-  //   font-weight: bold;
-  // }
+  .setion-pagination {
+    margin-bottom: 22px;
 
-  .img-gifos {
-    .gif {
-      // width: 250px;
-      // height: 200px;
-      overflow-x: auto;
-
-      .gif-img {
-        width: 187px;
-        height: 243px;
-        padding-left: 22px;
-      }
-
+    .button-more {
+      border: 1px solid $color-purple;
+      border-radius: 25px;
+      width: 127px;
+      height: 50px;
+      color: $color-purple;
+      outline-offset: unset;
+      outline: unset;
     }
   }
 
-  .button-more {
-    border: 1px solid $color-purple;
-    border-radius: 25px;
-    width: 127px;
-    height: 50px;
-    color: $color-purple;
-    outline-offset: unset;
-    outline: unset;
+  .trending {
+    background-color: $color-fondo-trending;
+    padding-top: 5px;
+    padding-bottom: 156px;
+
+    .img-gifos {
+      padding-left: 22px;
+      padding-right: 22px;
+
+      .button-next-before {
+        display: none;
+      }
+
+      .gif {
+        overflow-x: auto;
+
+        .trending-traslate {
+          .gif-img {
+            width: 243px;
+            height: 187px;
+            padding-left: 22px;
+          }
+        }
+      }
+    }
+
+    .paginacion {
+      width: 243px;
+      overflow-x: auto;
+      justify-content: end;
+
+      .button-paginacion {
+        background: #572ee5;
+        border: 1px solid #572ee5;
+        color: white;
+        border-radius: 20px;
+        width: 32px;
+        height: 32px;
+      }
+    }
   }
+}
 
-  .paginacion {
-    width: 243px;
-    overflow-x: auto;
-    justify-content: end;
+@media (min-width: 768px) {
+  .section-trending-gifos {
+    .setion-pagination {
+      margin-bottom: 22px;
 
-    .button-paginacion {
-      background: #572ee5;
-      border: 1px solid #572ee5;
-      color: white;
-      border-radius: 20px;
-      width: 32px;
-      height: 32px;
+      .button-more {
+        border: 1px solid $color-purple;
+        border-radius: 25px;
+        width: 127px;
+        height: 50px;
+        color: $color-purple;
+        outline-offset: unset;
+        outline: unset;
+      }
+    }
+
+    .trending {
+      background-color: $color-fondo-trending;
+      padding-top: 5px;
+      padding-bottom: 156px;
+
+      .gifos-container {
+        position: relative;
+
+        .option-trending-img {
+          position: absolute;
+          left: 432px;
+          padding-top: 10px;
+
+          .button-img-over {
+            // display: none;
+            margin-left: 8px;
+            width: 32px;
+            height: 32px;
+            background: #ffffff;
+            border-radius: 6px;
+            opacity: 0.7;
+            border: none;
+          }
+        }
+
+        .img-gifos {
+          padding-left: 156px;
+          padding-right: 156px;
+
+          .button-next-before {
+            display: block !important;
+            height: 30px;
+            width: 40px;
+            margin-right: 15px;
+            margin-top: 100px;
+            cursor: pointer;
+            color: $color-menu-purple;
+            border-color: $color-menu-purple;
+            border: solid 0.1px $color-menu-purple;
+
+            :hover {
+              background: $color-menu-purple;
+              color: white;
+            }
+          }
+
+          .before {
+            margin-right: 15px;
+          }
+
+          .next {
+            margin-left: 29px;
+          }
+
+          .gif {
+            // width: 250px;
+            // height: 200px;
+            overflow-x: auto;
+            overflow-x: hidden !important;
+
+            .trending-traslate {
+              .gif-img {
+                width: 357px;
+                height: 275px;
+                padding-left: 29px;
+              }
+            }
+
+            .option-trending-img {
+              position: absolute;
+              // left: 432px;
+              padding-top: 10px;
+
+              .button-img-over {
+                // display: none;
+                margin-left: 8px;
+                width: 32px;
+                height: 32px;
+                background: #ffffff;
+                border-radius: 6px;
+                opacity: 0.7;
+                border: none;
+              }
+            }
+          }
+        }
+      }
+
+      .paginacion {
+        width: 243px;
+        overflow-x: auto;
+        justify-content: end;
+
+        .button-paginacion {
+          background: #572ee5;
+          border: 1px solid #572ee5;
+          color: white;
+          border-radius: 20px;
+          width: 32px;
+          height: 32px;
+        }
+      }
     }
   }
 }
