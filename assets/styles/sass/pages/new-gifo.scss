@@ -2,7 +2,8 @@
 
 .new-gifos-container {
   padding-left: 25px;
-  margin-left: 156px;
+  // margin-left: 156px;
+  margin-left: 35px;
 
   .record-container {
     .img-record {
@@ -30,7 +31,7 @@
         margin: 2em auto;
         top: -21px;
         position: relative;
-
+        
         .titulo-container {
           top: 92px;
           left: 70px;
@@ -38,6 +39,10 @@
           position: absolute;
         }
 
+        .marco-permisos {
+          display: none;
+        }
+        
         &:after {
           content: '';
           width: 678px;
@@ -48,7 +53,7 @@
           top: -5px;
           left: -5px;
           background-image: linear-gradient(to left, transparent 30px, white 30px, white 648px, transparent 648px),
-            linear-gradient($color-blue 30px, transparent 30px, transparent 350px, $color-blue 350px);
+          linear-gradient($color-blue 30px, transparent 30px, transparent 350px, $color-blue 350px);
         }
       }
     }
@@ -69,6 +74,30 @@
       width: 32px;
       height: 32px;
       margin-right: 37px;
+    }
+  }
+
+  .line-container {
+    margin-top: 25px;
+    margin-left: 35px;
+
+    .line {
+      width: 795.9px;
+      height: 6.9px;
+      background: $color-purple;
+    }
+  }
+
+  .button-start-container {
+    margin-top: 10px;
+    .button-start {
+      border: 1px solid $color-purple;
+      border-radius: 25px;
+      width: 127px;
+      height: 50px;
+      color: $color-purple;
+      outline-offset: unset;
+      outline: unset;
     }
   }
 }

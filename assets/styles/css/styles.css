@@ -381,7 +381,7 @@ footer {
 
 .new-gifos-container {
   padding-left: 25px;
-  margin-left: 156px; }
+  margin-left: 35px; }
   .new-gifos-container .record-container .img-record {
     margin-top: 140px;
     position: relative;
@@ -407,6 +407,8 @@ footer {
         left: 70px;
         width: 550px;
         position: absolute; }
+      .new-gifos-container .record-container .marco-record .marcon-interior .marco-permisos {
+        display: none; }
       .new-gifos-container .record-container .marco-record .marcon-interior:after {
         content: '';
         width: 678px;
@@ -429,5 +431,22 @@ footer {
       width: 32px;
       height: 32px;
       margin-right: 37px; }
+  .new-gifos-container .line-container {
+    margin-top: 25px;
+    margin-left: 35px; }
+    .new-gifos-container .line-container .line {
+      width: 795.9px;
+      height: 6.9px;
+      background: #562fde; }
+  .new-gifos-container .button-start-container {
+    margin-top: 10px; }
+    .new-gifos-container .button-start-container .button-start {
+      border: 1px solid #562fde;
+      border-radius: 25px;
+      width: 127px;
+      height: 50px;
+      color: #562fde;
+      outline-offset: unset;
+      outline: unset; }
 
 /*# sourceMappingURL=styles.css.map */
